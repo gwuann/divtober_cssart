@@ -1,0 +1,43 @@
+.initials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background: $gradient-color;
+  position: relative;
+  animation:  2s infinite linear  rotate;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    box-shadow:
+      // J
+      -40px -12px 0 10px #fff,   
+      -40px 19px 0 10px #fff,  
+      -40px 35px 0 10px #fff,  
+      -40px 50px 0 10px #fff,  
+      -59px 50px 0 10px #fff,
+
+      // K
+      20px 0px 0 10px #fff,    
+      20px 19px 0 10px #fff,   
+      20px 38px 0 10px #fff, 
+      20px 50px 0 10px #fff,   
+      39px 30px 0 10px #fff, 
+      58px 10px 0 10px #fff,
+      58px 50px 0 10px #fff;
+  }
+
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+}

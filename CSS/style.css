@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px);
+  background: linear-gradient(0deg, #2ecc71, #3498db);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #3498db;
+}
+
+h1 {
+  font-family: sans-serif impact bold;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #2ecc71;
+}
+footer p {
+  font-size: 0.8rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+}
+
+.initials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(0deg, #2ecc71, #3498db);
+  position: relative;
+  animation: 2s infinite linear rotate;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.initials::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  box-shadow: -40px -12px 0 10px #fff, -40px 19px 0 10px #fff, -40px 35px 0 10px #fff, -40px 50px 0 10px #fff, -59px 50px 0 10px #fff, 20px 0px 0 10px #fff, 20px 19px 0 10px #fff, 20px 38px 0 10px #fff, 20px 50px 0 10px #fff, 39px 30px 0 10px #fff, 58px 10px 0 10px #fff, 58px 50px 0 10px #fff;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

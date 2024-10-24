@@ -1,0 +1,10 @@
+body {
+  background-color: $background-color;
+  color: $font-color;
+}
+  
+  main {
+    @include flex-center;
+    height: calc(100vh - 150px); 
+    background: $gradient-color;
+  }

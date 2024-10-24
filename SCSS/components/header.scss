@@ -1,0 +1,12 @@
+header {
+  @include flex-center;
+  height: 100px;
+  background-color: $primary-color;
+  
+}
+
+h1 {
+  font-family: $base-font;
+  color: $font-color;
+  
+}

@@ -1,0 +1,11 @@
+footer {
+    @include flex-center;
+    height: 50px;
+    background-color: $secondary-color;
+    p {
+      font-size: 0.8rem;
+      font-family: $stylish-font;
+      color: $font-color;
+    }
+  }
+  
